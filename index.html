@@ -1,55 +1,22 @@
-x<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conectar API con Vanilla JS</title>
-    <link rel="stylesheet" href="/style/index.css">
+    <title>Gestión de API</title>
+    <link rel="stylesheet" href="/style/main.css">
 </head>
 <body>
-    <h2>Usuarios</h2>
-    <input type="text" id="userName" placeholder="Nombre">
-    <input type="text" id="userLastname" placeholder="Apellido">
-    <button id="createUserButton">Crear Usuario</button>
-    <div id="userResult"></div>
-    <div id="pollingInfo">Actualizando usuarios cada 5 segundos...</div>
+    <div class="container">
+        <div class="button-container" id="usersContainer">
+            <button id="goToUsers">Usuarios</button>
+        </div>
+        <div class="button-container" id="productsContainer">
+            <button id="goToProducts">Productos</button>
+        </div>
+    </div>    
 
-    <h2>Buscador por id:</h2>
-    <div>
-        <input type="number" id="getuserId" placeholder="ID del usuario">
-        <button id="getUserButton">Obtener Usuario</button>
-    </div>
-    <div id="userIdResult">Usuario?</div>
-
-    <h2>Actualizar Usuario</h2>
-    <input type="number" id="updateUserId" placeholder="ID de usuario">
-    <input type="text" id="updateUserName" placeholder="Nuevo Nombre">
-    <input type="text" id="updateUserLastname" placeholder="Nuevo Apellido">
-    <button id="updateUserButton">Actualizar Usuario</button>
-    
-    <h2>Eliminar Usuario</h2>
-    <input type="number" id="deleteUserId" placeholder="ID de usuario">
-    <button onclick="deleteUser()">Eliminar Usuario</button>
-
-    <h2>Productos</h2>
-    <input type="text" id="productName" placeholder="Nombre del producto">
-    <input type="number" id="productPrice" placeholder="Precio" step="0.01">
-    <button id="createProductButton">Crear Producto</button>
-    <div id="productResult"></div>
-    <div id="pollingInfo">Actualizando productos cada 5 segundos...</div>
-    <div id="productResult"></div>
-    
-    <h2>Actualizar Producto</h2>
-    <input type="number" id="updateProductId" placeholder="ID del producto">
-    <input type="text" id="updateProductName" placeholder="Nuevo Nombre">
-    <input type="number" id="updateProductPrice" placeholder="Nuevo Precio" step="0.01">
-    <button id="updateProductButton">Actualizar Producto</button>
-    
-    <h2>Eliminar Producto</h2>
-    <input type="number" id="deleteProductId" placeholder="ID del producto">
-    <button onclick="deleteProduct()">Eliminar Producto</button>
-    
-
+    <script type="module" src="/scripts/router.js"></script>
     <script type="module" src="/scripts/main.js"></script>
 </body>
 </html>

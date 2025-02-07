@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Usuarios</title>
+    <link rel="stylesheet" href="/style/users.css">
+</head>
+<body>
+    <body>
+        <button id="backHome">Volver al Inicio</button>
+    
+        <div class="container">
+            <div class="column">
+                <div class="section">
+                    <h2>Usuarios</h2>
+                    <input type="text" id="userName" placeholder="Nombre">
+                    <input type="text" id="userLastname" placeholder="Apellido">
+                    <button id="createUserButton">Crear Usuario</button>
+                    <div id="userResult"></div>
+                    <div id="pollingInfo">Actualizando usuarios cada 5 segundos...</div>
+                </div>
+    
+                <div class="section">
+                    <h2>Buscador por ID</h2>
+                    <input type="number" id="getuserId" placeholder="ID del usuario">
+                    <button id="getUserButton">Obtener Usuario</button>
+                    <div id="userIdResult">Usuario?</div>
+                </div>
+            </div>
+    
+            <div class="column">
+                <div class="section">
+                    <h2>Actualizar Usuario</h2>
+                    <input type="number" id="updateUserId" placeholder="ID de usuario">
+                    <input type="text" id="updateUserName" placeholder="Nuevo Nombre">
+                    <input type="text" id="updateUserLastname" placeholder="Nuevo Apellido">
+                    <button id="updateUserButton">Actualizar Usuario</button>
+                </div>
+    
+                <div class="section">
+                    <h2>Eliminar Usuario</h2>
+                    <input type="number" id="deleteUserId" placeholder="ID de usuario">
+                    <button id="deleteUserButton">Eliminar Usuario</button>
+                </div>
+                <div class="section">
+                    <div id="Operation">Operaciones?</div>
+                </div>
+            </div>
+        </div>
+    <script type="module" src="/scripts/router.js"></script>
+    <script type="module" src="/scripts/DomLoader/user.js"></script>
+</body>
+</html>

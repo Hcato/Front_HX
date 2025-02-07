@@ -1,5 +1,4 @@
-import { getUserIdHandler } from "../Handlers/User_Handler.js";
-
+import { getUserIdHandler } from "../Handlers/User_Handlers/GetForIdUser.js";
 let pollingInterval = null;
 
 export function LongPollingUser() {

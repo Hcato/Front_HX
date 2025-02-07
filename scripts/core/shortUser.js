@@ -1,4 +1,4 @@
-import { getUsersHandler } from "../Handlers/User_Handler.js";
+import { getUsersHandler } from "../Handlers/User_Handlers/GetAllUser.js";
 
 let pollingInterval = null;
 

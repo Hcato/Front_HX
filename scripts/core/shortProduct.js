@@ -1,4 +1,4 @@
-import { getProductsHandler } from "../Handlers/Product_Handler.js";
+import { getProductsHandler } from "../Handlers/Product_Handlers/GetAllProducts.js";
 
 let pollingInterval = null;
 

@@ -1,0 +1,28 @@
+body {
+    background-size: cover;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    background-image: url(https://wallpapers.com/images/featured/fondos-morado-liso-jnypvas45mq50b22.jpg);
+}
+
+.container {
+    display: flex;
+    gap: 100px;
+}
+
+.button-container button {
+    padding: 20px 40px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background: rgba(224, 103, 254, 0.436); /* Purpura-rosado semitransparente */
+    color: #FF69B4; /* Rosa para el texto */
+    position: relative;
+    font-family: 'Poppins', sans-serif; /* Tipografía más gruesa */
+    font-weight: 500;
+}
