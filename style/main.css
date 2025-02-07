@@ -20,9 +20,9 @@ body {
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    background: rgba(224, 103, 254, 0.436); /* Purpura-rosado semitransparente */
-    color: #FF69B4; /* Rosa para el texto */
+    background: rgba(224, 103, 254, 0.436);
+    color: #fdb2d8; 
     position: relative;
-    font-family: 'Poppins', sans-serif; /* Tipografía más gruesa */
+    font-family: 'Poppins', sans-serif; 
     font-weight: 500;
 }
