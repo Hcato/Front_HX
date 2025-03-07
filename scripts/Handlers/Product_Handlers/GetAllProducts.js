@@ -1,7 +1,7 @@
 import { getProducts } from "../../api/Product_Controllers/GetAllProducts.js";
 
 export function getProductsHandler() {
-    getProducts()
+    return getProducts()  // Devuelve la promesa de la función getProducts
         .then((data) => {
             const productContainer = document.getElementById("productResult");
             productContainer.innerHTML = ""; 
